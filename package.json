@@ -1,0 +1,28 @@
+{
+  "name": "my-api-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DHurtado714-itesm/my-api-template.git",
+  "author": "Daniel Hurtado <81983296+DHurtado714-itesm@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node .dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon index.ts"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.28.17",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.9",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
